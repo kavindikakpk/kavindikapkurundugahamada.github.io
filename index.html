@@ -343,13 +343,19 @@ document.addEventListener('DOMContentLoaded', function() {
        Contact Me
     </h3>
     <p style="color:#fff; font-size:1.1em; text-align:center;">I’m always open to discussing data-driven projects, new opportunities, or collaborations. Drop me a message!</p>
-<form action="https://formsubmit.io/send/kavindikakpk@gmail.com" method="POST">
-  <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
-  <input type="text" name="name" placeholder="Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <input type="text" name="subject" placeholder="Subject" required />
-  <textarea name="message" placeholder="Message" rows="6" required></textarea>
-  <button type="submit">Send</button>
-</form>
+    <form method="post" action="#">
+      <div class="row gtr-uniform">
+        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+        <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+        <div class="col-12">
+          <ul class="actions">
+            <li><input type="submit" class="primary" value="Send Message" /></li>
+            <li><input type="reset" value="Reset Form" /></li>
+          </ul>
+        </div>
+      </div>
+    </form>
   </div>
 </section>
